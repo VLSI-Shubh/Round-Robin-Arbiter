@@ -19,7 +19,7 @@ module rra_tb_2;
   localparam QUANTUM_NS = 100;
 
   initial begin
-    $dumpfile("rrarbiter.vcd");
+    $dumpfile("rra_test2.vcd");
     $dumpvars();
 
     clk  = 0;
