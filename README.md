@@ -1,9 +1,16 @@
-![RTL Design](https://img.shields.io/badge/RTL%20Design-In%20progress-yellow)
-![Functional Verification](https://img.shields.io/badge/Functional%20Verification-In%20progress-yellow)
-![PYUVM Verification](https://img.shields.io/badge/PYUVM%20Verification-In%20progress-yellow)
-![Synthesis](https://img.shields.io/badge/Synthesis-In%20progress-yellow)
-![FPGA Implementation](https://img.shields.io/badge/FPGA%20Implementation-Pending-orange)
+# Work In Progress (WIP) Branch
 
+This branch is dedicated to **ongoing development**, including:
+- Improvements to existing designs  
+- Inclusion of new modules and features  
+- Experimental testing and prototype work  
 
-# Round-Robin-Arbiter
+⚠️ **Important Notice:**  
+Please **do not fork this branch**.  
+If you wish to contribute or explore stable code, then **clone or fork the [`main`](../main)** branch instead.
 
+I Use this branch only for development and internal testing purposes.
+
+---
+*Status: Active Development | Stability: Experimental*
+```
