@@ -1,0 +1,23 @@
+# Simulation executables
+sim_test1.out
+sim_test2.out
+sim.out
+
+# Yosys intermediate files
+*.dot
+*.log
+
+# Synthesized netlists
+*_synth.v
+*synthed.v
+
+# GTKWave workspace files
+*.gtkw
+
+# OS and temp files
+*~
+*.swp
+.DS_Store
+
+# VS Code settings
+.vscode/
