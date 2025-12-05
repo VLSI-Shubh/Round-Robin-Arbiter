@@ -1,0 +1,19 @@
+# =====================================================
+# Yosys show script for Round Robin Arbiter (block-level schematic)
+# Run from: project_root/synth/
+# =====================================================
+
+# Read RTL (note the ../src paths)
+read_verilog src/rra.v
+
+
+# Build hierarchy
+hierarchy -check -top rra
+
+# Build hierarchy but do not flatten
+hierarchy -check -top rra
+
+proc; opt; fsm; opt; memory; opt
+
+# Only show ONE module: core_pip
+show -format svg -prefix rra rra

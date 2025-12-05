@@ -1,0 +1,20 @@
+# =====================================================
+# Yosys synthesis script for Round Robin Arbiter
+# Run from: project_root/synth/
+# =====================================================
+
+# Read RTL (note the ../src paths)
+read_verilog src/rra.v
+
+
+# Build hierarchy
+hierarchy -check -top rra
+
+# Generic synthesis passes
+proc; opt; fsm; opt; memory; opt
+
+# Run synth
+synth -top rra
+
+# Netlist goes inside synth/
+write_verilog -noattr rra_synth.v
