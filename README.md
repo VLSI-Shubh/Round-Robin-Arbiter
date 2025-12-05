@@ -32,14 +32,30 @@ ROUND ROBIN ARBITER/
 ├── src/
 │   └── rra.v                    
 ├── synth/
-│   ├── synth_rra.ys              #Yosys synthesis script
-│   └── show_rra.ys               #Yosys visualization script
+│   ├── synth_rra.ys              # Yosys synthesis script
+│   └── show_rra.ys               # Yosys visualization script
 ├── testbench/
-│   └── test1/
-│       ├── test1.v               
-│       └── output-test1.png      #Reference waveform
-└── run_sim.sh                    #Automated build and test script
+│   ├── test1/
+│   │   ├── test1.v               
+│   │   └── output-test1.png      # Reference waveform
+│   └── test2/
+│       ├── test2.v               
+│       └── output-test2.png      # Reference waveform
+└── run_sim.sh                    # Automated build and test script
 ```
+### Testbenches
+
+There are two main testbenches for the round-robin arbiter:
+
+``` test1.v ```
+- Simple testbench for basic functional verification  
+- Provides standard request–grant sequences with minimal overlap  
+- Useful for initial sanity checking of the arbiter logic  
+
+```test2.v```
+- Stress testbench designed to create simultaneous requests and extended conflicts  
+- Exercises round-robin rotation under heavy contention  
+- Validates correct grant cycling, fairness, and pointer updates in waveforms  
 
 ## Tools Used
 
